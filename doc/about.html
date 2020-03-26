@@ -2,9 +2,30 @@
 <p>This model simulates replication dynamics of SARS-CoV-2 (coronavirus / COVID19) in a layer of epithelium. 
 It is being rapidly prototyped and refined with community support (<a href="#model_details">see below</a>). </p>
 
-<p>In this model, SARS-CoV-2 (coronavirus / COVID19) infects a single cell. The virus is uncoated to expose viral RNA, which synthesizes viral proteins that are assembled into a virion. Assembled virions are exported to the environment. Virions diffuse and can infect other cells (including the original cell). </p>
+<p>In this model, SARS-CoV-2 (coronavirus / COVID19) infects a single cell. The virus is uncoated to explose viral RNA, which synthesizes viral proteins that are assembled into a virion. Assembled virions are exported to the environment. Virions diffuse and can infect other cells (including the original cell). </p>
 
 <p>The model includes a basic pharmacodynamic response (to assembled virions) to cause cell apoptosis. Apoptosed cells release some or all of their internal contents, notably including virions. </p> 
+
+<p><strong>Legend:</strong></b>
+<ul>
+<li><strong>Circles:</strong> These are lung epithelial cells. They are colored by their (assembled) virion loads in four colors
+
+<ul style="font-family: courier;">
+<li><span style="font-weight: strong; background-color: rgb(0,0,255)"    >dark blue----:</span> Cells with 0 assembled virions. </li>
+<li><span style="font-weight: strong; background-color: rgb(64,64,199)"  >pale blue----:</span> Cells with 1-9 assembled virions. </li>
+<li><span style="font-weight: strong; background-color: rgb(128,128,128)">grey---------:</span> Cells with 10-99 assembled virions. </li>
+<li><span style="font-weight: strong; background-color: rgb(199,199,64)" >light yellow-:</span> Cells with 100-999 assembled virions. </li>
+<li><span style="font-weight: strong; background-color: rgb(255,255,0)"  >bright yellow:</span> Cells with 1000+ assembled virions. </li>
+
+</ul>
+Black cells are apoptotic (dead from viral load). 
+</li>
+
+<li><strong>Background:</strong> Contour plot of released virus that is diffusion in and above the tissue.
+</li>
+
+</ul>
+
 
 <h2 id="GUI_overview"><strong>GUI Overview</strong></h2>
 <ul>
