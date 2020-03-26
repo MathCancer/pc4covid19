@@ -115,7 +115,7 @@ class SubstrateTab(object):
             # description='# cell frames',
         self.max_frames = BoundedIntText(
             min=0, max=99999, value=max_frames,
-            description='# frames',
+            description='# cell frames',
            layout=Layout(width='160px'),
         )
         self.max_frames.observe(self.update_max_frames)
@@ -305,7 +305,7 @@ class SubstrateTab(object):
         self.substrates_toggle = Checkbox(
             description='Substrates',
             disabled=False,
-            value=True,
+            value=False,
 #           layout=Layout(width=constWidth2),
         )
         def substrates_toggle_cb(b):
