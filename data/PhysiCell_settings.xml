@@ -104,7 +104,7 @@
 		<folder>.</folder> <!-- use . for root --> 
 
 		<full_data>
-			<interval units="min">360</interval>
+			<interval units="min">60</interval>
 			<enable>true</enable>
 		</full_data>
 		
@@ -195,8 +195,6 @@
 		<virion_uptake_rate type="double" units="1/min" description="rate coefficient for virion endocytosis">1</virion_uptake_rate>
 		
 		<virus_fraction_released_at_death type="double" units="none" description="fraction of internal virus released at cell death">0</virus_fraction_released_at_death>
-		
-		<plot_scale type="double" units="none" description="scale for viral load coloring">100</plot_scale>
 		
 	</user_parameters>
 	
